@@ -1,0 +1,6 @@
+{
+    "complexityAnalyzer.realTimeAnalysis": true,
+    "complexityAnalyzer.showInlineComplexity": true,
+    "complexityAnalyzer.showInStatusBar": true,
+    "complexityAnalyzer.pythonPath": "python"
+} 

@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./codizer/python_backend"
+    ]
+}

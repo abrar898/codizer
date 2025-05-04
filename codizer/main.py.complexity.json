@@ -1,0 +1,548 @@
+{
+  "file": "main.py",
+  "overall": {
+    "time_complexity": "O(n)",
+    "space_complexity": "O(n)"
+  },
+  "lines": {
+    "1": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "import os"
+    },
+    "2": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "import sys"
+    },
+    "3": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "import subprocess"
+    },
+    "4": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "import time"
+    },
+    "5": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "import json"
+    },
+    "7": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Main function and algorithm demonstrations"
+    },
+    "8": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "def main():"
+    },
+    "9": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Test arrays"
+    },
+    "10": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "my_array = [11, 12, 22, 25, 34, 64, 90]"
+    },
+    "11": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "unsorted = [64, 34, 25, 12, 22, 11, 90]"
+    },
+    "13": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Print algorithm results"
+    },
+    "14": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "print(f\"Constant time: {constant_time(5)}\")"
+    },
+    "15": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "print(f\"Linear search for 12: {linear_search(my_array, 12)}\")"
+    },
+    "16": {
+      "time": "O(log n)",
+      "space": "O(log n)",
+      "line": "print(f\"Binary search for 12: {binary_search(my_array, 12)}\")"
+    },
+    "17": {
+      "time": "O(n^3)",
+      "space": "O(1)",
+      "line": "print(f\"Triple nested loop result: {triple_nested_loop(3)}\")"
+    },
+    "19": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "print(f\"Original array: {unsorted}\")"
+    },
+    "20": {
+      "time": "O(n^2)",
+      "space": "O(1)",
+      "line": "print(f\"Bubble sort: {bubble_sort(unsorted.copy())}\")"
+    },
+    "21": {
+      "time": "O(n log n)",
+      "space": "O(1)",
+      "line": "print(f\"Merge sort: {merge_sort(unsorted.copy())}\")"
+    },
+    "23": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Test n value"
+    },
+    "24": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "n = 15"
+    },
+    "25": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "print(\"Counting from 15 to 20:\")"
+    },
+    "26": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "while n <= 20:  # O(1) - only iterates 6 times"
+    },
+    "27": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "print(n)"
+    },
+    "28": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "n += 1"
+    },
+    "30": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(1)"
+    },
+    "31": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Space Complexity: O(1)"
+    },
+    "32": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "def constant_time(n):"
+    },
+    "33": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return n + 1  # Simple arithmetic operation: O(1)"
+    },
+    "35": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(n)"
+    },
+    "36": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Space Complexity: O(1)"
+    },
+    "37": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "def linear_search(arr, target):"
+    },
+    "38": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Single loop through array of length n: O(n)"
+    },
+    "39": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "for i in range(len(arr)):  # O(n)"
+    },
+    "40": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "if arr[i] == target:   # O(1)"
+    },
+    "41": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "return i           # O(1)"
+    },
+    "42": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return -1                  # O(1)"
+    },
+    "44": {
+      "time": "O(n^2)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(n^2)"
+    },
+    "45": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Space Complexity: O(1)"
+    },
+    "46": {
+      "time": "O(n^2)",
+      "space": "O(1)",
+      "line": "def bubble_sort(arr):"
+    },
+    "47": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "n = len(arr)               # O(1)"
+    },
+    "48": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Two nested loops: outer O(n), inner O(n) \u00e2\u2020\u2019 O(n\u00c2\u00b2)"
+    },
+    "49": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "for i in range(n):         # O(n)"
+    },
+    "50": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "for j in range(0, n - i - 1):  # O(n)"
+    },
+    "51": {
+      "time": "O(n^2)",
+      "space": "O(1)",
+      "line": "if arr[j] > arr[j + 1]:    # O(1)"
+    },
+    "52": {
+      "time": "O(n^2)",
+      "space": "O(1)",
+      "line": "arr[j], arr[j + 1] = arr[j + 1], arr[j]  # O(1)"
+    },
+    "53": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return arr                 # O(1)"
+    },
+    "55": {
+      "time": "O(n^3)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(n^3)"
+    },
+    "56": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Space Complexity: O(1)"
+    },
+    "57": {
+      "time": "O(n^3)",
+      "space": "O(1)",
+      "line": "def triple_nested_loop(n):"
+    },
+    "58": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "result = 0                 # O(1)"
+    },
+    "59": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Three nested loops: O(n\u00c2\u00b3)"
+    },
+    "60": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "for i in range(n):         # O(n)"
+    },
+    "61": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "for j in range(n):     # O(n)"
+    },
+    "62": {
+      "time": "O(n^2)",
+      "space": "O(1)",
+      "line": "for k in range(n): # O(n)"
+    },
+    "63": {
+      "time": "O(n^3)",
+      "space": "O(1)",
+      "line": "result += 1    # O(1)"
+    },
+    "64": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return result              # O(1)"
+    },
+    "66": {
+      "time": "O(log n)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(log n)"
+    },
+    "67": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Space Complexity: O(1)"
+    },
+    "68": {
+      "time": "O(log n)",
+      "space": "O(log n)",
+      "line": "def binary_search(arr, target):"
+    },
+    "69": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "left, right = 0, len(arr) - 1  # O(1)"
+    },
+    "71": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Loop divides search space in half each time: O(log n)"
+    },
+    "72": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "while left <= right:       # O(log n)"
+    },
+    "73": {
+      "time": "O(log n)",
+      "space": "O(1)",
+      "line": "mid = (left + right) // 2  # O(1)"
+    },
+    "74": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "if arr[mid] == target:     # O(1)"
+    },
+    "75": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return mid             # O(1)"
+    },
+    "76": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "elif arr[mid] < target:    # O(1)"
+    },
+    "77": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "left = mid + 1         # O(1)"
+    },
+    "78": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "else:"
+    },
+    "79": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "right = mid - 1        # O(1)"
+    },
+    "81": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return -1                  # O(1)"
+    },
+    "83": {
+      "time": "O(n log n)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(n log n)"
+    },
+    "84": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "# Space Complexity: O(n)"
+    },
+    "85": {
+      "time": "O(n log n)",
+      "space": "O(1)",
+      "line": "def merge_sort(arr):"
+    },
+    "86": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "if len(arr) <= 1:          # O(1)"
+    },
+    "87": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return arr             # O(1)"
+    },
+    "89": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Divide the array into two halves"
+    },
+    "90": {
+      "time": "O(log n)",
+      "space": "O(1)",
+      "line": "mid = len(arr) // 2        # O(1)"
+    },
+    "91": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Recursive calls: T(n) = 2T(n/2) + O(n) \u00e2\u2020\u2019 O(n log n)"
+    },
+    "92": {
+      "time": "O(n log n)",
+      "space": "O(1)",
+      "line": "left_half = merge_sort(arr[:mid])   # T(n/2)"
+    },
+    "93": {
+      "time": "O(n log n)",
+      "space": "O(1)",
+      "line": "right_half = merge_sort(arr[mid:])  # T(n/2)"
+    },
+    "95": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Merge step takes O(n)"
+    },
+    "96": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return merge(left_half, right_half) # O(n)"
+    },
+    "98": {
+      "time": "O(n)",
+      "space": "O(1)",
+      "line": "# Time Complexity: O(n)"
+    },
+    "99": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "# Space Complexity: O(n)"
+    },
+    "100": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "def merge(left, right):"
+    },
+    "101": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "result = []                # O(1)"
+    },
+    "102": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "i = j = 0                  # O(1)"
+    },
+    "104": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# Linear time to merge two arrays: O(n)"
+    },
+    "105": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "while i < len(left) and j < len(right):  # O(n)"
+    },
+    "106": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "if left[i] <= right[j]:    # O(1)"
+    },
+    "107": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "result.append(left[i])  # O(1)"
+    },
+    "108": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "i += 1                  # O(1)"
+    },
+    "109": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "else:"
+    },
+    "110": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "result.append(right[j]) # O(1)"
+    },
+    "111": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "j += 1                  # O(1)"
+    },
+    "113": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "# These operations are at most O(n)"
+    },
+    "114": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "result.extend(left[i:])    # O(n)"
+    },
+    "115": {
+      "time": "O(1)",
+      "space": "O(n)",
+      "line": "result.extend(right[j:])   # O(n)"
+    },
+    "116": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "return result              # O(1)"
+    },
+    "118": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "if __name__ == \"__main__\":"
+    },
+    "119": {
+      "time": "O(1)",
+      "space": "O(1)",
+      "line": "main()"
+    }
+  },
+  "functions": {
+    "main": {
+      "time": "O(log n)",
+      "space": "O(n)"
+    },
+    "constant_time": {
+      "time": "O(1)",
+      "space": "O(1)"
+    },
+    "linear_search": {
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    "bubble_sort": {
+      "time": "O(n^3)",
+      "space": "O(1)"
+    },
+    "triple_nested_loop": {
+      "time": "O(n^4)",
+      "space": "O(1)"
+    },
+    "binary_search": {
+      "time": "O(log n)",
+      "space": "O(log n)"
+    },
+    "merge_sort": {
+      "time": "O(2^n)",
+      "space": "O(n)"
+    },
+    "merge": {
+      "time": "O(n^2)",
+      "space": "O(n)"
+    }
+  }
+}
